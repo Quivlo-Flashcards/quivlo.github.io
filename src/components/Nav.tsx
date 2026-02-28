@@ -2,6 +2,9 @@ import { useState } from 'react'
 import { ThemeToggle } from './ThemeToggle'
 import { APP_STORE_URL } from '../config'
 
+const base = import.meta.env.BASE_URL || '/'
+const logoPath = `${base}AppIcon-1024.png`
+
 const navLinks = [
   { href: '#features', label: 'Features' },
   { href: '#screenshots', label: 'Screenshots' },
@@ -14,9 +17,22 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-200/80 dark:border-slate-800/80 bg-white/90 dark:bg-[#0a0a0f]/90 backdrop-blur-xl pt-[env(safe-area-inset-top)]">
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:py-4 sm:px-6 lg:px-8" aria-label="Main">
-        <a href="#" className="flex items-center gap-2.5 font-bold text-lg text-slate-900 dark:text-white group">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 text-white text-sm font-extrabold shadow-md shadow-indigo-500/20 group-hover:shadow-lg group-hover:shadow-indigo-500/30 transition-shadow">
-            Q
+        <a href="#" className="flex items-center gap-3 font-bold text-lg text-slate-900 dark:text-white group">
+          <span className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl overflow-hidden shadow-md shadow-indigo-500/20 ring-2 ring-slate-200/80 dark:ring-slate-700/80 transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-indigo-500/25 group-hover:ring-indigo-400/40 dark:group-hover:ring-indigo-500/50">
+            <img
+              src={logoPath}
+              alt=""
+              className="h-full w-full object-cover"
+              onError={(e) => {
+                const target = e.currentTarget
+                target.style.display = 'none'
+                const fallback = target.nextElementSibling
+                if (fallback) (fallback as HTMLElement).style.display = 'flex'
+              }}
+            />
+            <span className="absolute inset-0 hidden items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600 text-white text-sm font-extrabold" aria-hidden>
+              Q
+            </span>
           </span>
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300">
             Quivlo
