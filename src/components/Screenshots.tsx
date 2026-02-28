@@ -4,22 +4,22 @@ const base = import.meta.env.BASE_URL || '/'
 
 export function Screenshots() {
   return (
-    <section id="screenshots" className="px-4 py-24 sm:px-6 lg:px-8 scroll-mt-20">
-      <div className="mx-auto max-w-6xl">
+    <section id="screenshots" className="px-4 py-16 sm:py-24 sm:px-6 lg:px-8 scroll-mt-20 overflow-hidden">
+      <div className="mx-auto max-w-6xl min-w-0">
         <p className="text-center text-sm font-semibold tracking-widest uppercase text-indigo-600 dark:text-indigo-400">
           Gallery
         </p>
-        <h2 className="mt-3 text-3xl font-bold text-center text-slate-900 dark:text-white sm:text-4xl lg:text-5xl">
+        <h2 className="mt-3 text-2xl font-bold text-center text-slate-900 dark:text-white sm:text-4xl lg:text-5xl">
           See Quivlo in action
         </h2>
-        <p className="mt-4 text-center text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg">
+        <p className="mt-4 text-center text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-base sm:text-lg">
           From link to flashcards to share in a few taps.
         </p>
-        <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+        <div className="mt-12 sm:mt-20 grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
           {screenshots.map((shot) => (
             <div
               key={shot.id}
-              className="group relative rounded-3xl overflow-hidden bg-slate-200 dark:bg-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-slate-900/50 aspect-[9/19] min-h-[340px] flex items-center justify-center border border-slate-200/80 dark:border-slate-700/80 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10"
+              className="group relative rounded-2xl sm:rounded-3xl overflow-hidden bg-slate-200 dark:bg-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-slate-900/50 aspect-[9/19] min-h-[280px] sm:min-h-[340px] flex items-center justify-center border border-slate-200/80 dark:border-slate-700/80 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10 max-w-[280px] mx-auto sm:max-w-none"
             >
               <img
                 src={`${base}${shot.src}`}

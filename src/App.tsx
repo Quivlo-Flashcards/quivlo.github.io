@@ -12,7 +12,7 @@ export function App() {
   return (
     <>
       <Nav />
-      <main>
+      <main className="overflow-x-hidden min-w-0">
         <Hero />
         <SocialProof />
         <Features />

@@ -53,7 +53,7 @@ export function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden px-4 pt-20 pb-24 sm:px-6 sm:pt-24 sm:pb-32 lg:px-8">
+    <section className="relative min-h-[85vh] sm:min-h-[90vh] flex items-center overflow-hidden px-4 pt-16 pb-20 sm:pt-20 sm:pb-24 sm:px-6 lg:px-8 lg:pt-24 lg:pb-32">
       <div className="absolute inset-0 bg-mesh pointer-events-none" aria-hidden />
       <div className="absolute inset-0 bg-gradient-to-b from-slate-50/80 via-transparent to-slate-50 dark:from-[#0a0a0f]/90 dark:via-transparent dark:to-[#0a0a0f] pointer-events-none" aria-hidden />
 
@@ -102,7 +102,7 @@ export function Hero() {
               href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary px-5 py-2.5 text-sm"
+              className="btn-primary min-h-[44px] inline-flex items-center px-6 py-3 text-sm touch-manipulation"
             >
               <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
@@ -111,7 +111,7 @@ export function Hero() {
             </a>
             <a
               href="#features"
-              className="inline-flex items-center justify-center gap-1.5 rounded-full border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 px-5 py-2.5 text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800/50 hover:border-slate-400 dark:hover:border-slate-500 transition-all duration-300"
+              className="inline-flex items-center justify-center gap-1.5 min-h-[44px] rounded-full border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 px-6 py-3 text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800/50 hover:border-slate-400 dark:hover:border-slate-500 transition-all duration-300 touch-manipulation"
             >
               View Features
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -138,11 +138,11 @@ export function Hero() {
           </div>
 
           <div
-            className="relative w-[280px] sm:w-[300px]"
+            className="relative w-[260px] sm:w-[300px] max-w-[85vw]"
             style={{ transform: 'perspective(1000px) rotateY(-5deg) rotateX(2deg)' }}
           >
             <div className="absolute -inset-4 rounded-[3rem] bg-gradient-to-b from-indigo-500/25 to-violet-500/20 blur-2xl opacity-70 dark:opacity-50" aria-hidden />
-            <div className="relative flex flex-col rounded-[2.75rem] border-[14px] border-slate-800 dark:border-slate-600 bg-slate-900 dark:bg-slate-950 shadow-2xl overflow-hidden h-[560px] sm:h-[600px]">
+            <div className="relative flex flex-col rounded-[2.75rem] border-[12px] sm:border-[14px] border-slate-800 dark:border-slate-600 bg-slate-900 dark:bg-slate-950 shadow-2xl overflow-hidden h-[500px] sm:h-[600px]">
               {/* Status bar */}
               <div className="h-11 shrink-0 flex items-center justify-between px-6 pt-2 text-xs text-white/90 font-medium">
                 <span>9:41</span>

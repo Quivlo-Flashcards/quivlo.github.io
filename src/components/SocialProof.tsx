@@ -6,14 +6,14 @@ const bullets = [
 
 export function SocialProof() {
   return (
-    <section className="px-4 py-20 sm:px-6 lg:px-8">
+    <section className="px-4 py-12 sm:py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-3xl">
-        <div className="relative rounded-2xl border border-slate-200/80 dark:border-slate-700/80 bg-white/60 dark:bg-slate-900/40 backdrop-blur-sm px-8 py-10 shadow-soft dark:shadow-soft-dark">
+        <div className="relative rounded-2xl border border-slate-200/80 dark:border-slate-700/80 bg-white/60 dark:bg-slate-900/40 backdrop-blur-sm px-5 py-8 sm:px-8 sm:py-10 shadow-soft dark:shadow-soft-dark">
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-indigo-500/5 via-transparent to-violet-500/5 pointer-events-none" aria-hidden />
-          <p className="relative text-xl font-semibold text-center text-slate-800 dark:text-slate-200">
+          <p className="relative text-lg sm:text-xl font-semibold text-center text-slate-800 dark:text-slate-200">
             Built for fast learning and sharing.
           </p>
-          <ul className="relative mt-8 flex flex-col gap-4 text-slate-600 dark:text-slate-400">
+          <ul className="relative mt-6 sm:mt-8 flex flex-col gap-3 sm:gap-4 text-slate-600 dark:text-slate-400 text-sm sm:text-base">
             {bullets.map((item, i) => (
               <li key={i} className="flex items-center gap-3">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-indigo-500/10 dark:bg-indigo-400/10 text-indigo-600 dark:text-indigo-400">
