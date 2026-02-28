@@ -16,7 +16,7 @@ export function Screenshots() {
           From link to flashcards to share in a few taps.
         </p>
         <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
-          {screenshots.map((shot, i) => (
+          {screenshots.map((shot) => (
             <div
               key={shot.id}
               className="group relative rounded-3xl overflow-hidden bg-slate-200 dark:bg-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-slate-900/50 aspect-[9/19] min-h-[340px] flex items-center justify-center border border-slate-200/80 dark:border-slate-700/80 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10"
