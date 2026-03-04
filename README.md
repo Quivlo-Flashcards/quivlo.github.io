@@ -17,18 +17,9 @@ VITE_BASE_PATH=/
 
 Then run `npm run dev` again.
 
-## Replace App Store link
+## App Store link
 
-1. **Option A: env (recommended)**  
-   Create `.env` in the project root:
-   ```env
-   VITE_APP_STORE_URL=https://apps.apple.com/app/quivlo/idYOUR_APP_ID
-   ```
-
-2. **Option B: code**  
-   Edit `src/config.ts` and set `APP_STORE_URL` to your App Store URL.
-
-Rebuild after changing: `npm run build`.
+The site links to Quivlo on the App Store by default: [https://apps.apple.com/us/app/quivlo/id6759634487](https://apps.apple.com/us/app/quivlo/id6759634487). To override, set `VITE_APP_STORE_URL` in `.env` or edit `src/config.ts`. Rebuild after changing: `npm run build`.
 
 ## Add screenshots
 
