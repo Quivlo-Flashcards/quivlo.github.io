@@ -60,7 +60,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-6xl w-full flex flex-col lg:flex-row lg:items-center lg:gap-16 xl:gap-20">
         <div className="flex-1 text-center lg:text-left">
           <p className="inline-flex items-center rounded-full border border-indigo-500/50 bg-indigo-500/10 dark:bg-indigo-500/10 px-3 py-1 text-xs font-semibold text-indigo-600 dark:text-indigo-400 mb-6 animate-fade-in">
-            Now available on iOS
+            Quivlo 2.0 · On iOS
           </p>
           <div className="flex items-center justify-center lg:justify-start gap-4 mb-6">
             <div className="relative shrink-0 flex items-center justify-center h-20 w-20 sm:h-24 sm:w-24">
@@ -95,7 +95,7 @@ export function Hero() {
             <span className="text-slate-900 dark:text-white">Share.</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Turn articles, links, and screenshots into beautiful flashcards you can review and share.
+            Turn articles, links, and screenshots into on-device AI flashcards you can review and share. Private, fast, and built for remembering what you read.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <a

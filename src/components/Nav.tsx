@@ -6,6 +6,7 @@ const base = import.meta.env.BASE_URL || '/'
 const logoPath = `${base}AppIcon-1024.png`
 
 const navLinks = [
+  { href: '#whats-new', label: "What's new" },
   { href: '#features', label: 'Features' },
   { href: '#screenshots', label: 'Screenshots' },
   { href: '#faq', label: 'FAQ' },

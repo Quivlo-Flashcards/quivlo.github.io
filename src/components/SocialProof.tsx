@@ -1,7 +1,7 @@
 const bullets = [
-  'Generate flashcards in seconds from any link or text',
-  'Share polished cards and carousels to LinkedIn and social',
-  'Review and save everything in one place',
+  'On-device AI turns text, links, and screenshots into clearer flashcards',
+  'Smarter extraction and rewriting for ideas worth remembering',
+  'Review, save sets in My Cards, and share polished images anywhere',
 ]
 
 export function SocialProof() {
@@ -11,7 +11,7 @@ export function SocialProof() {
         <div className="relative rounded-2xl border border-slate-200/80 dark:border-slate-700/80 bg-white/60 dark:bg-slate-900/40 backdrop-blur-sm px-5 py-8 sm:px-8 sm:py-10 shadow-soft dark:shadow-soft-dark">
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-indigo-500/5 via-transparent to-violet-500/5 pointer-events-none" aria-hidden />
           <p className="relative text-lg sm:text-xl font-semibold text-center text-slate-800 dark:text-slate-200">
-            Built for fast learning and sharing.
+            Quivlo 2.0: learning and sharing, upgraded.
           </p>
           <ul className="relative mt-6 sm:mt-8 flex flex-col gap-3 sm:gap-4 text-slate-600 dark:text-slate-400 text-sm sm:text-base">
             {bullets.map((item, i) => (

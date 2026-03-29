@@ -6,13 +6,13 @@ export function CtaSection() {
       <div className="mx-auto max-w-4xl">
         <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-indigo-500 to-violet-600 px-5 py-10 text-center shadow-2xl shadow-indigo-500/20 dark:shadow-indigo-500/10 sm:px-10 sm:py-16">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/90">
-            Available on iOS
+            Quivlo 2.0 · Available on iOS
           </p>
           <h2 className="mt-3 text-2xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Start reading smarter today.
+            On-device AI flashcards. Start today.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-sm text-white/90 sm:text-lg">
-            Download Quivlo free and turn your reading into lasting knowledge.
+            Download Quivlo free and turn reading into flashcards that stick.
           </p>
           <a
             href={APP_STORE_URL}
